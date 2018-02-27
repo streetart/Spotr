@@ -1,18 +1,30 @@
 
 
 <div class="collapse" id="navbarToggleExternalContent">
-  <ul class="nav  justify-content-center">
-    <li class="nav-item active">
-      <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/component">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/user">User</a>
-    </li>
-  </ul>
+
+  <div class="vertical-menu">
+    <ul class="nav flex-column align-items-center" id="menu">
+      <li class="nav-item" data-toggle="collapse" data-target=".collapse">
+        <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".collapse">
+        <a class="nav-link" routerLink="/location">Location</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".collapse">
+        <a class="nav-link" routerLink="/beaches">Beaches</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".collapse">
+        <a class="nav-link" routerLink="/about">About</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".collapse">
+        <a class="nav-link" routerLink="/contact">Contact Us</a>
+      </li>
+    </ul>
+  </div>
 </div>
+
+
+
 
 <nav class="navbar navbar-light justify-content-between">
   <a class="navbar-brand" routerLink="">{{ title}}</a>
@@ -29,7 +41,6 @@
     </button>
   </form>
 </nav>
-
 
 
 

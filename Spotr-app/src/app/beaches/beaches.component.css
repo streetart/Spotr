@@ -1,0 +1,43 @@
+#beaches {
+  background-image: url("../../assets/images/hero_africa_bg.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto 600px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  z-index: -2;
+  right: 0;
+}
+
+.beach-container {
+  margin-left: 100px;
+}
+
+img.surf-pic-1 {
+  max-height: 85vh;
+}
+
+h1 {
+  font-size: 110px;
+}
+h6 {
+  font-weight: lighter;
+  color: #438797;
+  margin-left: 40px;
+  letter-spacing: 0.5rem;
+  line-height: 2;
+  font-size: 16px;
+}
+
+h6 span:before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-top: 2px solid #438797;
+  width: 20px;
+  left: 120px;
+  margin-top: 30px;
+
+}

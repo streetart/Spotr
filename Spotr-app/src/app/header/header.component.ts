@@ -9,7 +9,9 @@ export class HeaderComponent implements OnInit {
 
   title = 'Spotr.';
 
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

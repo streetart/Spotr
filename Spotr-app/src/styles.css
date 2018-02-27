@@ -1,8 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background: url("assets/images/hero_africa_bg.png") no-repeat;
-  background-size: cover;
-  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  font-family: 'maison_neuebook';
 }
 
 .navbar-toggler {
@@ -14,6 +13,96 @@ body {
 button:focus {
   outline: none;
 }
+
+a {
+  color: #000
+}
+
+a:hover {
+  color: #438797;
+}
+
+/*Typography*/
+
+
+@font-face {
+  font-family: 'gorditabold';
+  src: url('assets/fonts/gordita/gorditabold-webfont.woff2') format('woff2'),
+  url('assets/fonts/gordita/gorditabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'maison_neuebook';
+  src: url('assets/fonts/maisonneue/maisonneue-book_copy-webfont.woff2') format('woff2'),
+  url('assets/fonts/maisonneue/maisonneue-book_copy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'maison_neuelight';
+  src: url('assets/fonts/maisonneue/maisonneue-light_copy-webfont.woff2') format('woff2'),
+  url('assets/fonts/maisonneue/maisonneue-light_copy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'maison_neuebold';
+  src: url('assets/fonts/maisonneue/maisonneuebold_copy-webfont.woff2') format('woff2'),
+  url('assets/fonts/maisonneue/maisonneuebold_copy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'maison_neuemedium';
+  src: url('assets/fonts/maisonneue/maisonneue-medium_copy-webfont.woff2') format('woff2'),
+  url('assets/fonts/maisonneue/maisonneue-medium_copy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'droid_serifregular';
+  src: url('assets/fonts/droidSerif/DroidSerif-Regular-webfont.eot');
+  src: url('assets/fonts/droidSerif/DroidSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/droidSerif/DroidSerif-Regular-webfont.woff') format('woff'),
+  url('assets/fonts/droidSerif/DroidSerif-Regular-webfont.ttf') format('truetype'),
+  url('assets/fonts/droidSerif/DroidSerif-Regular-webfont.svg#droid_serifregular') format('svg');
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'droid_serifbold';
+  src: url('assets/fonts/droidSerif/DroidSerif-Bold-webfont.eot');
+  src: url('assets/fonts/droidSerif/DroidSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/droidSerif/DroidSerif-Bold-webfont.woff') format('woff'),
+  url('assets/fonts/droidSerif/DroidSerif-Bold-webfont.ttf') format('truetype'),
+  url('assets/fonts/droidSerif/DroidSerif-Bold-webfont.svg#droid_serifbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
 
 
 /*Icons*/
@@ -45,4 +134,17 @@ button:focus {
 
 .icon-menu:before {
   content: "\e900";
+}
+
+
+
+h1, h2, h6 {
+  font-family: 'droid_serifregular';
+}
+
+p {
+  color: #949494;
+  font-family: 'maison_neuelight';
+  font-size: 14px;
+  line-height: 2;
 }

@@ -1,1 +1,7 @@
 
+#homePage {
+  background: url("../../assets/images/home_hero.jpeg") no-repeat;
+  background-size: cover;
+  height: 86vh;
+  padding: 16px;
+}

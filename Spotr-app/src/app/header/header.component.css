@@ -1,12 +1,24 @@
 
 #navbarToggleExternalContent {
-  background-color: #064657;
-  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 100%;
+  padding-top: 80px;
+  z-index: 2;
+  /*margin-top: 50px;*/
 }
 
-a {
-  color: #fff;
+#navbarToggleExternalContent ul.nav li {
+  line-height: 4rem;
+  font-size: 200%;
+  font-family: 'droid_serifregular';
 }
+
+
+
 
 .box{
   height: 50px;
@@ -79,5 +91,27 @@ a {
   color: #93a2ad;
 }
 
+#menu {
+  background: hsla(1,0%,100%,.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 100%;
+  padding-top: 80px;
+}
 
+.navbar-brand {
+  font-family: 'gorditabold';
+}
 
+.navbar {
+  z-index: 3;
+}
+
+.vertical-menu {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+}
