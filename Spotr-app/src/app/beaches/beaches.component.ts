@@ -12,11 +12,6 @@ export class BeachesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    var duration = anime({
-      targets: '#duration .el',
-      translateX: [400, 0],
-      duration: 10000,
-    });
   }
 
 }
