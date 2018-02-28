@@ -20,7 +20,7 @@ export class ComponentComponent implements OnInit {
       rotate: '1turn',
       backgroundColor: '#FFF',
       duration: 2000,
-      loop: true
+      loop: false
     });
 
   }
