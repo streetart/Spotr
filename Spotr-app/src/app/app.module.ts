@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 
 
 import { AppComponent } from './app.component';
@@ -16,7 +18,9 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { WeatherComponent } from './weather/weather.component';
-
+import { BeachProfileComponent } from './beach-profile/beach-profile.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { BeachCardsComponent } from './beach-cards/beach-cards.component';
 
 
 
@@ -32,12 +36,18 @@ import { WeatherComponent } from './weather/weather.component';
     AboutComponent,
     ContactComponent,
     FooterComponent,
-    WeatherComponent
+    WeatherComponent,
+    BeachProfileComponent,
+    NotfoundComponent,
+    BeachCardsComponent,
+
+
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    NgbModule,
     RouterModule.forRoot([
       { path: '',
         component: HomeComponent
@@ -45,14 +55,21 @@ import { WeatherComponent } from './weather/weather.component';
       { path: 'location',
         component: LocationComponent
       },
+      { path: 'beaches/:id',
+        component: BeachProfileComponent
+      },
       { path: 'beaches',
         component: BeachesComponent
       },
+
       { path: 'about',
         component: AboutComponent
       },
       { path: 'contact',
         component: ContactComponent
+      },
+      { path: '**',
+        component: NotfoundComponent
       },
     ])
   ],

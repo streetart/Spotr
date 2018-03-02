@@ -64,3 +64,11 @@ h6 span:before{
   background-color: darkblue;
   border-radius: 50%;
 }
+
+
+.carousel-footer {
+  padding: 10px;
+}
+.carousel-footer a{
+    font-family: 'droid_serifregular';
+}
