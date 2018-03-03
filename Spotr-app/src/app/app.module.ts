@@ -61,6 +61,10 @@ import { BeachCardsComponent } from './beach-cards/beach-cards.component';
       { path: 'beaches',
         component: BeachesComponent
       },
+      { path: 'beachesSelection',
+        component: BeachCardsComponent
+      },
+
 
       { path: 'about',
         component: AboutComponent

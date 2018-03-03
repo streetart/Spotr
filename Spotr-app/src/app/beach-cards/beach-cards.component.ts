@@ -1,16 +1,18 @@
 import { Component} from '@angular/core';
 import {animate, query, stagger, style, transition, trigger} from "@angular/animations";
 
+
 @Component({
   selector: 'app-beach-cards',
   templateUrl: './beach-cards.component.html',
   styleUrls: ['./beach-cards.component.css'],
   animations: [
+
     trigger('slideInAnimation', [
       transition('* => *', [
         query('div',style({ transform: 'translateY(100%)'})),
         query('div',
-          stagger('120ms', [
+          stagger('1200ms', [
             animate('900ms', style({ transform: 'translateX(0)'}))
           ]))
       ])
