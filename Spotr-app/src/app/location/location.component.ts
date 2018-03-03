@@ -12,10 +12,5 @@ declare var $ :any;
 export class LocationComponent implements OnInit{
   constructor() { }
   ngOnInit() {
-    $('div').click(function () {
-      alert('ok');
-    });
-
-
   }
 }

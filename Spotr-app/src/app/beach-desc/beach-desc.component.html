@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="col-sm">
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">The Wave</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Surfing trips</a>
+      </li>
+    </ul>
+
+    <div id="#myBeaches" class="carousel slide mt-4" data-ride="carousel">
+      <div class="carousel-inner row ">
+        <div class="carousel-item col-md-4 p-1 active" *ngFor="let beacheImages of myBeachImage">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="{{beacheImages.image}}" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="##myBeaches" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="##myBeaches" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div class="d-flex content-end flex-column" style="min-height: 100%">
+      <div class="mt-auto">
+          <div> <p class="pt-4 pb-3">It is an awesome wave, often very hollow, almost perfect. Not for the faint-hearted. I've only surfed here a couple of times on my longboard when the wave here has been relatively small.</p></div>
+          <div><h1>Icy Barrels,<br/>
+            Pitted Hearts</h1></div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+

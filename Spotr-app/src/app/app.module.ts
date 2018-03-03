@@ -21,6 +21,7 @@ import { WeatherComponent } from './weather/weather.component';
 import { BeachProfileComponent } from './beach-profile/beach-profile.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { BeachCardsComponent } from './beach-cards/beach-cards.component';
+import { BeachDescComponent } from './beach-desc/beach-desc.component';
 
 
 
@@ -40,6 +41,7 @@ import { BeachCardsComponent } from './beach-cards/beach-cards.component';
     BeachProfileComponent,
     NotfoundComponent,
     BeachCardsComponent,
+    BeachDescComponent,
 
 
   ],
@@ -64,8 +66,6 @@ import { BeachCardsComponent } from './beach-cards/beach-cards.component';
       { path: 'beachesSelection',
         component: BeachCardsComponent
       },
-
-
       { path: 'about',
         component: AboutComponent
       },
