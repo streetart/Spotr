@@ -18,13 +18,19 @@ import {
   animations: [
     trigger('slideInAnimation', [
       transition('* => *', [
-        query('div',style({ transform: 'translateX(100%)'})),
-        query('div',
+        query('.text-col',style({ transform: 'translateX(100%)'}), {optional:true}),
+        query('.text-col',
           stagger('600ms', [
             animate('900ms', style({ transform: 'translateX(0)'}))
           ]))
       ])
     ])
+
+
+
+
+
+
   ]
 
 })
