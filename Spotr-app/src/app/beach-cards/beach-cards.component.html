@@ -1,19 +1,22 @@
-<div class="row no-gutters">
+<section id="beachCards">
+  <h2>{{ heading }}</h2>
+  <div class="row no-gutters">
 
-  <div class="col-sm-3" *ngFor="let beaches of myBeachCards">
-    <div [@slideInAnimation]>
-      <div>
-      <a routerLink="/beaches" class="card">
-        <img class="card-img-top img-fluid" src="{{beaches.image}}" alt="Card image cap">
-        <div class="card-img-overlay">
-          <h4 class="card-title">{{beaches.name}}</h4>
-          <p class="card-text">{{beaches.area}}</p>
+    <div class="col-xs-1 col-sm-2 col-md-4" *ngFor="let beaches of myBeachCards">
+      <div [@slideInAnimation]>
+        <div>
+          <a routerLink="/beaches" class="card">
+            <img class="card-img-top img-fluid" src="{{beaches.image}}" alt="Card image cap">
+            <div class="card-img-overlay">
+              <h4 class="card-title">{{beaches.name}}</h4>
+              <p class="card-text">{{beaches.area}}</p>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 
 <!--[routerLink]="['beaches', beaches/beaches]"-->

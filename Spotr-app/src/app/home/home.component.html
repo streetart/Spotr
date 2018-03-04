@@ -1,9 +1,25 @@
-<div id="homePage">
-  <div class="row">
-    <div class="col-sm">
-      welcome to <h1>{{ title }}</h1>
+<section id="homePage" class="foo">
+  <div class="spotr-home-content home-content" style="opacity: 1">
+    <div class="container">
+      <h1>{{ title }}</h1>
+      <h2><span>Next generation Surf App</span></h2>
+      <p> Find that perfect beach for with all the latest updates.</p>
+    </div>
+
+    <div class="local-scroll">
+      <a href="#spotr-features" class="play-video"></a>
     </div>
   </div>
-</div>
+</section>
 
-<app-beach-cards></app-beach-cards>
+<section class="spotr-intro-placeholder"></section>
+
+
+<div class="bar"><app-beach-cards></app-beach-cards></div>
+
+
+<script>
+  window.sr = ScrollReveal();
+  sr.reveal('.foo');
+  sr.reveal('.bar');
+</script>

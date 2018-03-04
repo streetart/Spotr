@@ -3,8 +3,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AngularFireModule} from 'angularfire2';
+import { AngularFireDatabaseModule} from 'angularfire2/database';
+import { environment } from '../environments/environment';
+import { AngularFirestore } from 'angularfire2/firestore';
 
 
 import { AppComponent } from './app.component';
@@ -22,7 +25,10 @@ import { BeachProfileComponent } from './beach-profile/beach-profile.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { BeachCardsComponent } from './beach-cards/beach-cards.component';
 import { BeachDescComponent } from './beach-desc/beach-desc.component';
+import {AngularFireStorageModule} from 'angularfire2/storage';
 
+import { ItemService } from './service/item.service';
+import { ItemsComponent } from './items/items.component';
 
 
 @NgModule({
@@ -42,11 +48,15 @@ import { BeachDescComponent } from './beach-desc/beach-desc.component';
     NotfoundComponent,
     BeachCardsComponent,
     BeachDescComponent,
+    ItemsComponent,
 
 
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase, 'angularFs'),
+    AngularFireStorageModule,
+    AngularFireDatabaseModule,
     HttpClientModule,
     BrowserAnimationsModule,
     NgbModule,
@@ -77,7 +87,9 @@ import { BeachDescComponent } from './beach-desc/beach-desc.component';
       },
     ])
   ],
-  providers: [],
+  providers: [
+    ItemService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

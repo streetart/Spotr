@@ -15,16 +15,10 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    $(document).on("scroll", function(){
-      if
-      ($(document).scrollTop() > 0){
-        $("#homePage").addClass("shrink");
-      }
-      else
-      {
-        $("#homePage").removeClass("shrink");
-      }
+    $(window).scroll(function(){
+      $('#homePage').css('opacity', 1 - $(window).scrollTop() / 600);
     });
+
 
   }
 

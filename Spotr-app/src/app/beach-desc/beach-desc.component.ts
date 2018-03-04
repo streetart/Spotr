@@ -57,6 +57,7 @@ export class BeachDescComponent implements OnInit {
         }
       }
     });
+    $('.collapse').collapse()
 
   }
 

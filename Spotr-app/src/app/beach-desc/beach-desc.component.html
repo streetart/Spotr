@@ -3,30 +3,42 @@
 
     <ul class="nav nav-tabs">
       <li class="nav-item">
-        <a class="nav-link active" href="#">The Wave</a>
+        <a class="nav-link active" data-toggle="collapse" href="#waves" role="button" aria-expanded="false" aria-controls="collapseExample">
+          The Wave
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Surfing trips</a>
+        <a class="nav-link" data-toggle="collapse" href="#surfTrips" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Surfing trips
+        </a>
+
       </li>
     </ul>
-
-    <div id="#myBeaches" class="carousel slide mt-4" data-ride="carousel">
-      <div class="carousel-inner row ">
-        <div class="carousel-item col-md-4 p-1 active" *ngFor="let beacheImages of myBeachImage">
-          <div class="card">
-            <img class="card-img-top img-fluid" src="{{beacheImages.image}}" alt="Card image cap">
+    <div class="collapse.show" id="waves">
+      <div id="#myBeaches" class="carousel slide mt-4" data-ride="carousel">
+        <div class="carousel-inner row ">
+          <div class="carousel-item col-md-4 p-1 active" *ngFor="let beacheImages of myBeachImage">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="{{beacheImages.image}}" alt="Card image cap">
+            </div>
           </div>
         </div>
+        <a class="carousel-control-prev" id="#myBeaches" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myBeaches" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <a class="carousel-control-prev" href="##myBeaches" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="##myBeaches" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
+
+    <div class="collapse" id="surfTrips">
+      <p>surf trips</p>
+    </div>
+
+
   </div>
   <div class="col-sm">
     <div class="d-flex content-end flex-column" style="min-height: 100%">

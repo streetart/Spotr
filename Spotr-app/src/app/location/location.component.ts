@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-declare var jquery:any;
-declare var $ :any;
+import { Component} from '@angular/core';
+import { AngularFireDatabase} from 'angularfire2/database';
+
 
 
 
@@ -9,8 +9,14 @@ declare var $ :any;
   templateUrl: './location.component.html',
   styleUrls: ['./location.component.css']
 })
-export class LocationComponent implements OnInit{
-  constructor() { }
-  ngOnInit() {
+export class LocationComponent{
+  beachesList: any[];
+
+  constructor(db: AngularFireDatabase) {
+    db.list('/beaches')
+      .valueChanges().subscribe(beaches => {
+      this.beachesList = beaches;
+      console.log(this.beachesList);
+    });
   }
 }

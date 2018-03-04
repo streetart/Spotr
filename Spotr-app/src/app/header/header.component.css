@@ -7,7 +7,8 @@
   right: 0;
   left: 0;
   min-height: 100%;
-  padding-top: 80px;
+  max-height: 100%;
+  padding-top: 50px;
   z-index: 2;
   /*margin-top: 50px;*/
 }
@@ -18,7 +19,9 @@
   font-family: 'droid_serifregular';
 }
 
-
+#navbarToggleExternalContent ul {
+  padding-top: 10px;
+}
 
 
 .box{
@@ -108,6 +111,7 @@
 
 .navbar {
   z-index: 3;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .vertical-menu {

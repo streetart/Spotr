@@ -11,6 +11,15 @@
     "e2e": "ng e2e"
   },
   "private": true,
+  "keywords": [
+    "anime",
+    "animation",
+    "javascript",
+    "CSS",
+    "transforms",
+    "SVG",
+    "canvas"
+  ],
   "dependencies": {
     "@angular/animations": "^5.2.7",
     "@angular/common": "^5.2.0",
@@ -28,8 +37,10 @@
     "core-js": "^2.4.1",
     "firebase": "^4.10.1",
     "jquery": "^3.3.1",
+    "npm": "^5.7.1",
     "rxjs": "^5.5.6",
     "save": "^2.3.2",
+    "scrollreveal": "^3.3.6",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {

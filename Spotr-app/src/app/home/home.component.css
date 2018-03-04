@@ -1,42 +1,96 @@
 
 #homePage {
-  background: url("../../assets/images/home_hero.jpeg");
+  background: #fff url("../../assets/images/home_hero.jpeg") no-repeat bottom right;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
-  height: 70vh;
-  padding: 16px;
-  transition: height 2s ease-in-out;
-  -webkit-transition: height 2s ease-in-out;
-  -moz-transition: height 2s ease-in-out;
-  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
 }
 
-#homePage.shrink {
 
-  background-size:cover;
-  height: 10vh !important;
-  background-position: center bottom;
-
-}
-
-section {
+.spotr-home-content.home-content {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  text-align: left;
 }
 
-.logo { margin: auto; }
-.vert { transform-origin: center bottom; }
-.hori { transform-origin: 0% 50%; }
-.diag-left { transform-origin: 100% 100%; }
-.diag-right { transform-origin: 100% 0%; }
-
-.stripes path,
-.text-fills path,
-.katakana path,
-.line {
-  opacity: 0
+.spotr-home-content h1 {
+  overflow: hidden;
+  text-indent: -2000em;
+  margin: 0 0 25px 0;
+  height: 85px;
+  background: url("../../assets/images/Spotr.white_logo.png");
+  background-size: contain;
+  background-position: 0px top;
+  background-repeat: no-repeat;
 }
+
+.spotr-home-content h2 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #000;
+}
+
+.spotr-home-content p {
+  max-width: 710px;
+  font-size: 32px;
+  color: #fdfdfd;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.spotr-home-content a.play-video {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background: url(https://blackswan.com/images/sonar/down-arrow-icon.svg) no-repeat center;
+  background-size: auto auto;
+  background-size: contain;
+  position: absolute;
+  right: 50%;
+  bottom: 68px;
+  transform: translateX(-50%);
+}
+
+.spotr-intro-placeholder {
+  height: 100vh;
+}
+
+/*#homePage.shrink {*/
+
+  /*background-size:cover;*/
+  /*height: 10vh !important;*/
+  /*background-position: center bottom;*/
+
+/*}*/
+
+/*section {*/
+  /*position: absolute;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+/*}*/
+
+/*.logo { margin: auto; }*/
+/*.vert { transform-origin: center bottom; }*/
+/*.hori { transform-origin: 0% 50%; }*/
+/*.diag-left { transform-origin: 100% 100%; }*/
+/*.diag-right { transform-origin: 100% 0%; }*/
+
+/*.stripes path,*/
+/*.text-fills path,*/
+/*.katakana path,*/
+/*.line {*/
+  /*opacity: 0*/
+/*}*/

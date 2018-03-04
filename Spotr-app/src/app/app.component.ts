@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-declare var jquery:any;
-declare var $ :any;
+
 
 
 @Component({
@@ -9,5 +8,5 @@ declare var $ :any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Spotr.';
+
 }

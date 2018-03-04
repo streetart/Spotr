@@ -1,5 +1,7 @@
-import { Component} from '@angular/core';
-import {animate, query, stagger, style, transition, trigger} from "@angular/animations";
+import { Component, OnInit } from '@angular/core';
+import {animate, query, stagger, style, transition, trigger} from '@angular/animations';
+
+
 
 
 @Component({
@@ -10,7 +12,7 @@ import {animate, query, stagger, style, transition, trigger} from "@angular/anim
 
     trigger('slideInAnimation', [
       transition('* => *', [
-        query('div',style({ transform: 'translateY(100%)'})),
+        query('div', style({ transform: 'translateY(100%)'})),
         query('div',
           stagger('1200ms', [
             animate('900ms', style({ transform: 'translateX(0)'}))
@@ -19,7 +21,9 @@ import {animate, query, stagger, style, transition, trigger} from "@angular/anim
     ])
   ]
 })
-export class BeachCardsComponent{
+export class BeachCardsComponent implements OnInit {
+
+heading = 'Local Beach Choices';
 
   myBeachCards = [
     {'name': 'Beach-1', 'area': 'South Coast', 'image': 'https://picsum.photos/300/200?image=1041'},
@@ -31,7 +35,11 @@ export class BeachCardsComponent{
     {'name': 'Beach-4', 'area': 'East Coast', 'image': 'https://picsum.photos/300/200?image=610'},
   ];
 
+
   constructor() { }
+
+  ngOnInit() {}
+
 
 
 }
